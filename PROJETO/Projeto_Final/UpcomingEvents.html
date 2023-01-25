@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Responsive Navbar | CodingNepal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lib/font-awesome/dist/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="mycss.css" />
+    <title></title>
+    <style>
+        .navbar {
+            width: 100%;
+            background-color: #fff;
+            z-index: 10;
+            border-radius: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg p-0 mb-0 bg-black text-white navbar navbar-default navbar-nav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Home.html">
+                <img src="F1_Formula_1.png" height="80px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"> <i style="color: red;" class="fa fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul style="text-align:center;" class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li><a href="Home.html" style="font-family: fantasy; text-decoration: none;">Home</a>
+                    <li><a href="Drivers2.html" style="font-family: fantasy; text-decoration: none;">Drivers</a></li>
+                    <li><a href="News.html" style="font-family: fantasy; text-decoration: none;">News</a></li>
+                    <li><a href="LiveEvents.html" class="active" style="font-family: fantasy; text-decoration: none;">Events</a></li>
+                    <li><a href="circuits2.html" style="font-family: fantasy; text-decoration: none;">Circuits</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-family: fantasy;color:white;padding: 1px 13px;">
+                            Constructors
+                        </a>
+                        <ul class="dropdown-menu" style="background-color:black;" aria-labelledby="navbarDropdown">
+                            <li><a style="background-color: black; color: white; font-size: 15px; font-family: fantasy;" class="dropdown-item" href="Teams.html">Grand Prix 2022 Constructors</a></li>
+                            <li><a style="background-color: black; color: white; font-size: 15px; font-family: fantasy; text-decoration:none; " class="dropdown-item;" href="constructors.html">All Time Cosntructors</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container mt-3 mb-5">
+            <h1 style='font-family: sans-serif'><b>Schedule season 2022</b></h1>
+            <div class="row bar"></div>
+            <a href="LiveEvents.html" class="mt-1 btn btn-dark">Past Events</a> <a href="UpcomingEvents.html" class=" mt-1 btn btn-danger ">Upcoming Events</a>
+            <form>
+                <div class="row form-group">
+                    <div class="mt-3"> <h1><b>Ticket Store</b></h1> </div>
+                    <div class="col-1 offset-6 direita"><i class="fa fa-shopping-cart fa-2x"></i></div>
+                    <div class="col-1 direita"><span class="form-control" id="quantidades" title="Quantidade total de bilhetes">0</span></div>
+                    <div class="col-2 direita"><span class="form-control" id="total" title="Preço total da compra">0.00</span></div>
+                    <div class="col-2 direita">
+                        <button type="button" class="btn btn-danger disabled" onclick="validar()" id="btn_send" title="Enviar pedido"><i class="fa fa-send"></i></button>
+                        <button type="button" class="btn btn-dark" onclick="limpar()" title="Limpar compra"><i class="fa fa-trash-o"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <div class="container mb-5 mt-lg-5">
+        <div class="row">
+            <div class="col-md-4" style="margin:5px;">
+                <fieldset style="width:450px; margin-left:100px;" class=" fullbar"></fieldset>
+                <div style="background-color: ghostwhite; width: 450px; height: 209.8px; margin-left: 100px;" class="inclusion-row inclusion-white-bg">
+                    <p class="inclusion-date">
+                        <span class="inclusion-day">18-20</span>
+                        <span class="inclusion-month">Mar</span>
+                    </p>
+                    <div class="event-details">
+                        <div class="flag"></div>
+                        <img style="height:33px; width:50px;" src="https://d2xpg1khvwxlf1.cloudfront.net/production/images/original/11782-F1-Experiences-Bahrain-Flag-06a6d123b66b68e5e8cc2551a6766558.jpg" />
+                    </div>
+                    <div class="inclusion-details">
+                        <p class="inclusion-title hidden-sm hidden-xs">FORMULA 1 BAHRAIN GRAND PRIX 2022</p>
+                        <p class="inclusion-title hidden-lg hidden-md">2022 Bahrain Grand Prix</p>
+                        <p class="inclusion-description">Sakhir, Bahrain</p>
+                        <h6><span class="text-danger">160€</span> <span class="small"><s> 195€</s></span></h6>
+                        <input type="hidden" name="precobilhete1" id="precobilhete1" value="160" />
+                        <input type="hidden" name="bilhete1" id="bilhete1" value="0" />
+                        <div class="row justify-content-center" style="text-align: center;">
+                            <a href="/1/Bahrain.html" style="margin-right: 5px; width: 110px; height:35px; background-color: black;" class="btn btn-dark">Localização</a>
+                            <button type="button" style="margin-right: 5px; width: 110px; height: 35px; background-color: black;" class="btn btn-dark btn-block butao" onclick="comprar(1)"><i class="fa fa-shopping-bag"></i> Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" style="margin:5px;">
+                <fieldset style="width: 450px; margin-left: 320px;" class=" fullbar"></fieldset>
+                <div style="background-color: ghostwhite; width: 450px; margin-left: 320px;" class="inclusion-row inclusion-white-bg">
+                    <p class="inclusion-date">
+                        <span class="inclusion-day">25-27</span>
+                        <span class="inclusion-month">Mar</span>
+                    </p>
+                    <div class="event-details">
+                        <div class="flag"></div>
+                        <img style="height:33px; width:50px;" src="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Flags%2016x9/saudi-arabia-flag.png.transform/2col/image.png" />
+                    </div>
+                    <div class="inclusion-details">
+                        <p class="inclusion-title hidden-sm hidden-xs">FORMULA 1 SAUDI ARABIAN GRAND PRIX 2022</p>
+                        <p class="inclusion-title hidden-lg hidden-md">2022 Saudi Arabia Grand Prix</p>
+                        <p class="inclusion-description">Gidá, Arábia Saudita</p>
+                        <h6><span class="text-danger">120€</span> <span class="small"><s> 145€</s></span></h6>
+                        <input type="hidden" name="precobilhete2" id="precobilhete2" value="120" />
+                        <input type="hidden" name="bilhete2" id="bilhete2" value="0" />
+                        <div class="row justify-content-center" style="text-align: center;">
+                            <a href="/1/jeedah.html" style="margin-right: 5px; width: 110px; height:35px; background-color: black;" class="btn btn-dark">Localização</a>
+                            <button type="button" style="margin-right: 5px; width: 110px; height: 35px; background-color: black;" class="btn btn-dark btn-block butao" onclick="comprar(2)"><i class="fa fa-shopping-bag"></i> Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" style="margin:5px;">
+                <fieldset style="width: 450px; margin-left:100px;" class=" fullbar"></fieldset>
+                <div style="background-color: ghostwhite; width: 450px; margin-left: 100px;" class="inclusion-row inclusion-white-bg">
+                    <p class="inclusion-date">
+                        <span class="inclusion-day">08-10</span>
+                        <span class="inclusion-month">Apr</span>
+                    </p>
+                    <div class="event-details">
+                        <div class="flag"></div>
+                        <img style="height:33px; width:50px;" src="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Flags%2016x9/australia-flag.png.transform/2col/image.png" />
+                    </div>
+                    <div class="inclusion-details">
+                        <p class="inclusion-title hidden-sm hidden-xs">FORMULA 1 AUSTRALIAN GRAND PRIX 2022</p>
+                        <p class="inclusion-title hidden-lg hidden-md">2022 Australian Grand Prix</p>
+                        <p class="inclusion-description">Albert Park Circuit, Australia</p>
+                        <h6><span class="text-danger">75€</span> <span class="small"><s> 90€</s></span></h6>
+                        <input type="hidden" name="precobilhete3" id="precobilhete3" value="75" />
+                        <input type="hidden" name="bilhete3" id="bilhete3" value="0" />
+                        <div class="row justify-content-center" style="text-align: center;">
+                            <a href="/1/albert park astralia.html" style="margin-right: 5px; width: 110px; height:35px; background-color: black;" class="btn btn-dark">Localização </a>
+                            <button type="button" style="margin-right: 5px; width: 110px; height: 35px; background-color: black;" class="btn btn-dark btn-block butao" onclick="comprar(3)"><i class="fa fa-shopping-bag"></i> Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 " style="margin:5px;">
+                <fieldset style="width: 450px; margin-left: 320px; margin-right: 100px; " class=" fullbar"></fieldset>
+                <div style="background-color: ghostwhite; width: 450px; margin-left: 320px; margin-right: 100px; " class="inclusion-row inclusion-white-bg">
+                    <p class="inclusion-date">
+                        <span class="inclusion-day">22-24  </span>
+                        <span class="inclusion-month">Apr</span>
+                    </p>
+                    <div class="event-details">
+                        <div class="flag"></div>
+                        <img style="height:33px; width:50px;" src="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Flags%2016x9/italy-flag.png.transform/2col/image.png" />
+                    </div>
+                    <div class="inclusion-details">
+                        <p class="inclusion-title hidden-sm hidden-xs">FORMULA 1 GRAN PREMIO DELL'EMILIA ROMAGNA 2022</p>
+                        <p class="inclusion-title hidden-lg hidden-md">2022 Italian Grand Prix</p>
+                        <p class="inclusion-description">Autodromo Enzo e Dino Ferrari, Italy</p>
+                        <h6><span class="small"><b> 55€</b></span></h6>
+                        <input type="hidden" name="precobilhete4" id="precobilhete4" value="55" />
+                        <input type="hidden" name="bilhete4" id="bilhete4" value="0" />
+                        <div class="row justify-content-center" style="text-align: center;">
+                            <a href="/1/imola.html" style="margin-right: 5px; width: 110px; height:35px; background-color: black;" class="btn btn-dark">Localização </a>
+                            <button type="button" style="margin-right: 5px; width: 110px; height: 35px; background-color: black;" class="btn btn-dark btn-block butao" onclick="comprar(4)"><i class="fa fa-shopping-bag"></i> Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" style="margin:5px;">
+                <fieldset style="width: 450px; margin-left: 100px; margin-right: 110px; " class=" fullbar"></fieldset>
+                <div style="background-color: ghostwhite; height:209.8px; width: 450px; margin-left: 100px; margin-right: 110px; " class="inclusion-row inclusion-white-bg">
+                    <p class="inclusion-date">
+                        <span class="inclusion-day">06-08</span>
+                        <span class="inclusion-month">May</span>
+                    </p>
+                    <div class="event-details">
+                        <div class="flag"></div>
+                        <img style="height:33px; width:50px;" src="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Flags%2016x9/united-states-flag.png.transform/2col/image.png" />
+                    </div>
+                    <div class="inclusion-details">
+                        <p class="inclusion-title hidden-sm hidden-xs">FORMULA 1 MIAMI GRAND PRIX 2022</p>
+                        <p class="inclusion-title hidden-lg hidden-md">2022 Miami Grand Prix</p>
+                        <p class="inclusion-description">Miami International Autodrome, USA</p>
+                        <h6><span class="small"><b> 215€</b></span></h6>
+                        <input type="hidden" name="precobilhete5" id="precobilhete5" value="215" />
+                        <input type="hidden" name="bilhete5" id="bilhete5" value="0" />
+                        <div class="row justify-content-center" style="text-align: center;">
+                            <a href="/1/miami.html" style="margin-right: 5px; width: 110px; height:35px; background-color: black;" class="btn btn-dark">Localização </a>
+                            <button type="button" style="margin-right: 5px; width: 110px; height: 35px; background-color: black;" class="btn btn-dark btn-block butao" onclick="comprar(5)"><i class="fa fa-shopping-bag"></i> Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" style="margin:5px;">
+                <fieldset style="width: 450px; margin-left: 320px;" class=" fullbar"></fieldset>
+                <div style="background-color: ghostwhite; width: 450px; margin-left: 320px;" class="inclusion-row inclusion-white-bg">
+                    <p class="inclusion-date">
+                        <span class="inclusion-day">20-22</span>
+                        <span class="inclusion-month">May</span>
+                    </p>
+                    <div class="event-details">
+                        <div class="flag"></div>
+                        <img style="height:33px; width:50px;" src="https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/Flags%2016x9/spain-flag.png.transform/2col/image.png" />
+                    </div>
+                    <div class="inclusion-details">
+                        <p class="inclusion-title hidden-sm hidden-xs">FORMULA 1 GRAN PREMIO DE ESPAÑA 2022</p>
+                        <p class="inclusion-title hidden-lg hidden-md">2022 Spain Grand Prix</p>
+                        <p class="inclusion-description">Circuit de Barcelona-Catalunya, Spain</p>
+                        <h6><span class="small"><b> 65€</b></span></h6>
+                        <input type="hidden" name="precobilhete6" id="precobilhete6" value="65" />
+                        <input type="hidden" name="bilhete6" id="bilhete6" value="0" />
+                        <div class="row justify-content-center" style="text-align: center;">
+                            <a href="/1/catalunha.html" style="margin-right: 5px; width: 110px; height:35px; background-color: black;" class="btn btn-dark">Localização </a>
+                            <button type="button" style="margin-right: 5px; width: 110px; height: 35px; background-color: black;" class="btn btn-dark btn-block butao" onclick="comprar(6)"><i class="fa fa-shopping-bag"></i> Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar fixed-bottom" style="background-color: black; height:50px;">
+        <div class="container small">
+            <div class="navbar-text" style="color: white;">&copy;  Intrrodução as tecnologias Web - 2021/22</div>
+            <div class="navbar-nav">
+                <div class="nav-item text-end"><a href="https://www.instagram.com/f1/"><i style="color: #9a0e0e;" class="fa fa-instagram fa-2x mt-0"></i></a><a href="https://twitter.com/F1"><i style="color: #9a0e0e; padding:5px;" class="fa fa-twitter fa-2x"></i></a><a href="https://www.facebook.com/Formula1/"><i style="color: #9a0e0e;" class="fa fa-facebook fa-2x"></i></a></div>
+            </div>
+        </div>
+    </div>
+    <script src="../lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Bilhetes.js"></script>
+</body>
+</html>
+

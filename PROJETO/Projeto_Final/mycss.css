@@ -1,0 +1,177 @@
+﻿body {
+}
+
+
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+.GFG {
+    text-decoration: none;
+}
+
+#GFG2{
+   text-decoration: none;
+   
+}
+
+.card-title stong {
+    
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+nav ul li button {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a:hover {
+    color: #c40404;
+    transition: .5s;
+}
+
+.active {
+    color: #c40404;
+}
+
+.inclusion-row{
+    align-items: center;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 2px;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.inclusion-white-bg{
+    background-color: white;
+}
+
+.inclusion-date{
+    margin: 0;
+    text-align: center;
+}
+
+.inclusion-day {
+    font-family: "formula1", "Helvetica", sans-serif;
+    line-height: 24px;
+    display: block;
+    text-transform: uppercase;
+    color: #1e1e1e;
+}
+
+.inclusion-month {
+    background-color: #ededed;
+    color: #67676d;
+    border-radius: 15px;
+    line-height: 1;
+    display: table;
+    padding: 2px 10px;
+    width: auto;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.5px;
+    font-weight: normal;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+.event-details {
+    border-left: dotted 2px #d0d0d2;
+    display: flex;
+    flex-direction: row;
+    width: 120px;
+    padding-left: 20px;
+}
+
+.flag{
+    display: flex;
+}
+
+.inclusion-details {
+    margin: 0;
+    padding: 5px 20px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.inclusion-title {
+    font-family: "formula1", "Helvetica", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 5px;
+    color: #1e1e1e;
+}
+
+.inclusion-description {
+    font-family: "Titillium Web";
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.5px;
+    font-weight: normal;
+    margin: 0;
+    color: #1e1e1e;
+}
+
+.bar {
+    height: 10px;
+    padding-right: 24px;
+    margin-bottom: 20px;
+    background-color: red;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.fullbar {
+    border-top: solid 10px #212529;
+    border-right: solid 10px #212529;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+    
+.marg{
+    margin: 5px;
+}
+
+
+
+.imagens-constructors {
+    margin: 0;
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+.page-link {
+    color: #a83232;
+}
+
+    .page-link:hover {
+        color: #a83232;
+        background-color: #ffd9d9;
+    }
+
+.active .page-link {
+    border: #a83232 1px solid !important;
+}
+

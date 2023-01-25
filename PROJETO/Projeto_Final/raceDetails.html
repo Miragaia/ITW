@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>ITW 2021/22</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ITW 2021/22 - Seasons List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="mycss.css" />
+    <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg p-0 mb-0 bg-black text-white navbar navbar-default navbar-nav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Home.html">
+                <img src="F1_Formula_1.png" height="80px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"> <i style="color: red;" class="fa fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul style="text-align:center;" class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li><a href="Home.html" style="font-family: fantasy; text-decoration: none;">Home</a>
+                    <li><a href="drivers2.html" style="font-family: fantasy; text-decoration: none;">Drivers</a></li>
+                    <li><a href="News.html" style="font-family: fantasy; text-decoration: none;">News</a></li>
+                    <li><a href="LiveEvents.html" class="active" style="font-family: fantasy; text-decoration: none;">Events</a></li>
+                    <li><a href="circuits2.html" style="font-family: fantasy; text-decoration: none;">Circuits</a></li>
+                    <li><a href="Teams.html" style="font-family: fantasy; text-decoration: none;">Grand Prix 2022 Constructors</a></li>
+                    <li><a href="constructors.html" style="font-family: fantasy; text-decoration: none;">All Time Cosntructors</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Work Area-->
+    <div class="container">
+        <div class="py-2 mb-3 titulo">
+            <h2 data-bind="text:Name() +' ['+RaceId()+']'"></h2>
+        </div>
+        <!-- ko if:Name().length > 0 -->
+        <table class="table table-sm small titul">
+            <tr class="row">
+                <th class="col-md-2">Race Id</th>
+                <td class="col-md-10" data-bind="text: RaceId"></td>
+            </tr>
+            <tr class="row">
+                <th class="col-md-2">Circuit</th>
+                <td class="col-md-10" data-bind="text: Circuit"></td>
+            </tr>
+            <tr class="row">
+                <th class="col-md-2">Year</th>
+                <td class="col-md-10" data-bind="text: Year"></td>
+            </tr>
+            <tr class="row">
+                <th class="col-md-2">Round</th>
+                <td class="col-md-10" data-bind="text: Round"></td>
+            </tr>
+            <tr class="row">
+                <th class="col-md-2">Date</th>
+                <td class="col-md-10" data-bind="text: Date"></td>
+            </tr>
+            <tr class="row">
+                <th class="col-md-2">Time</th>
+                <td class="col-md-10" data-bind="text: Time"></td>
+            </tr>
+            <tr class="row">
+                <th class="col-md-2">Url</th>
+                <td class="col-md-10"><a class="text-muted text-decoration-none" data-bind="attr: {href: Url, target:'blank'}"><i class="fa fa-external-link"></i> [<span class="" data-bind="text: Url"></span>]</a></td>
+            </tr>
+            <tr class="row">
+                <th colspan="2">Results [<span data-bind="text: Results().length"></span>]</th>
+            </tr>
+            <tr>
+                <td colspan="2" class="small" data-bind="foreach: Results">
+                    <div class="border rounded d-inline-block mr-2 mb-1 p-1"><i class=" fa fa-dot-circle-o"></i> (<span data-bind="text: 'Pos. ' + Position"></span>) <span data-bind="text: 'Driver: '"></span> <a class="text-muted text-decoration-none" data-bind="text: DriverName, attr: { href:'DriverDetails.html?id=' + DriverId }"></a> (<span data-bind="text: DriverId"></span>) <span data-bind="text: 'Constructor: '"></span> <a class="text-muted text-decoration-none" data-bind="text: ConstructorName, attr: { href:'constructorsInfo.html?id=' + ConstructorId }"></a> (<span data-bind="text: ConstructorId"></span>)</div>
+                </td>
+            </tr>
+        </table>
+        <!-- /ko -->
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-light">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2418/2418779.png" height="30" /> Loading data...
+                    </h5>
+                </div>
+                <div class="modal-body text-center">
+                    <i class="fa fa-spin fa-3x fa-refresh"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Work Area -->
+    <div class="navbar fixed-bottom" style="background-color: black; height:50px;">
+        <div class="container small">
+            <div class="navbar-text" style="color: white;">&copy;  Intrrodução as tecnologias Web - 2021/22</div>
+            <div class="navbar-nav">
+                <div class="nav-item text-end"><a href="https://www.instagram.com/f1/"><i style="color: #9a0e0e;" class="fa fa-instagram fa-2x mt-0"></i></a><a href="https://twitter.com/F1"><i style="color: #9a0e0e; padding:5px;" class="fa fa-twitter fa-2x"></i></a><a href="https://www.facebook.com/Formula1/"><i style="color: #9a0e0e;" class="fa fa-facebook fa-2x"></i></a></div>
+            </div>
+        </div>
+    </div>
+    <!-- mudar para os meus scripts -->
+    <script src="../lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
+    <script src="raceDetails.js"></script>
+</body>
+</html>

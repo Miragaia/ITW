@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Responsive Navbar | CodingNepal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lib/font-awesome/dist/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="mycss.css" />
+    <title></title>
+    <style>
+        .navbar {
+            width: 100%;
+            background-color: #fff;
+            z-index: 10;
+            border-radius: 0;
+        }
+
+        .carousel {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .carousel-item {
+            height: 480px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+            .carousel-item:nth-child(1) {
+                background-image: url('https://images.unsplash.com/flagged/photo-1574786351749-2c2b5984a541?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80-');
+            }
+
+            .carousel-item:nth-child(2) {
+                background-image: url('https://images.unsplash.com/photo-1533418264835-9871c7c2dbf0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+            }
+
+            .carousel-item:nth-child(3) {
+                background-image: url('https://images.unsplash.com/photo-1582854050148-651d87fa3319?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+            }
+
+            .carousel-item:nth-child(4) {
+                background-image: url('https://www.f1mania.net/wp-content/webp-express/webp-images/uploads/2021/11/20211113_F1_Brasil_Largada_SprintQualifying_01_GettyImages-1-crop-1636917510-1500x513.jpg.webp');
+            }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg p-0 mb-0 bg-black text-white navbar navbar-default navbar-nav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Home.html">
+                <img src="F1_Formula_1.png" height="80px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"> <i style="color: red;" class="fa fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul style="text-align:center;" class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li><a href="Home.html" style="font-family: fantasy; text-decoration: none;">Home</a>
+                    <li><a href="Drivers2.html" style="font-family: fantasy; text-decoration: none;">Drivers</a></li>
+                    <li><a href="News.html" style="font-family: fantasy; text-decoration: none;">News</a></li>
+                    <li><a href="LiveEvents.html" style="font-family: fantasy; text-decoration: none;">Events</a></li>
+                    <li><a href="circuits2.html" style="font-family: fantasy; text-decoration: none;">Circuits</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"style="font-family: fantasy;color:white;padding: 1px 13px;">
+                            Constructors
+                        </a>
+                        <ul class="dropdown-menu" style="background-color:black;" aria-labelledby="navbarDropdown">
+                            <li><a style="background-color: black; color: white; font-size: 15px; font-family: fantasy;" class="dropdown-item" href="Teams.html">Grand Prix 2022 Constructors</a></li>
+                            <li><a style="background-color: black; color: white; font-size: 15px; font-family: fantasy; text-decoration:none; " class="dropdown-item;" href="constructors.html">All Time Cosntructors</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExample" class="carousel slide carousel-fade mb-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Títulos do Mundial de Fórmula 1 decidem-se na última prova após vitória de Hamilton no emocionante GP da Arábia Saudita -</h5>
+                    <p> Motores - SAPO Desporto</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Fórmula 1 regressa à Sport TV em 2022</h5>
+                    <p>0 aos 100 / Notícias em alta rotação</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Títulos do Mundial de Fórmula 1 decidem-se na última prova após vitória de Hamilton no emocionante GP da Arábia Saudita - Motores - SAPO Desporto</h5>
+                    <p>SAPO Desporto</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Hamilton bate Verstappen e adia título de campeão mundial de Fórmula 1</h5>
+                    <p>TSF</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="navbar fixed-bottom" style="background-color: black; height:50px;">
+        <div class="container small">
+            <div class="navbar-text" style="color: white;">&copy;  Intrrodução as tecnologias Web - 2021/22</div>
+            <div class="navbar-nav">
+                <div class="nav-item text-end"><a href="https://www.instagram.com/f1/"><i style="color: #9a0e0e;" class="fa fa-instagram fa-2x mt-0"></i></a><a href="https://twitter.com/F1"><i style="color: #9a0e0e; padding:5px;" class="fa fa-twitter fa-2x"></i></a><a href="https://www.facebook.com/Formula1/"><i style="color: #9a0e0e;" class="fa fa-facebook fa-2x"></i></a></div>
+            </div>
+        </div>
+    </div>
+    <script src="../lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

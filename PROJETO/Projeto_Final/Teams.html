@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Responsive Navbar | CodingNepal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lib/font-awesome/dist/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="mycss.css" />
+    <title></title>
+    <style>
+        .navbar {
+            width: 100%;
+            background-color: #fff;
+            z-index: 10;
+            border-radius: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg p-0 mb-0 bg-black text-white navbar navbar-default navbar-nav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Home.html">
+                <img src="F1_Formula_1.png" height="80px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"> <i style="color: red;" class="fa fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul style="text-align:center;" class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li><a href="Home.html" style="font-family: fantasy; text-decoration: none;">Home</a>
+                    <li><a href="Drivers2.html" style="font-family: fantasy; text-decoration: none;">Drivers</a></li>
+                    <li><a href="News.html" style="font-family: fantasy; text-decoration: none;">News</a></li>
+                    <li><a href="LiveEvents.html" style="font-family: fantasy; text-decoration: none;">Events</a></li>
+                    <li><a href="circuits2.html" style="font-family: fantasy; text-decoration: none;">Circuits</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-family: fantasy;color:#9a0e0e;padding: 1px 13px;">
+                            Constructors
+                        </a>
+                        <ul class="dropdown-menu" style="background-color:black;" aria-labelledby="navbarDropdown">
+                            <li><a style="background-color: black; color: white; font-size: 15px; font-family: fantasy;" class="dropdown-item" href="Teams.html">Grand Prix 2022 Constructors</a></li>
+                            <li><a style="background-color: black; color: white; font-size: 15px; font-family: fantasy; text-decoration:none; " class="dropdown-item;" href="constructors.html">All Time Cosntructors</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container mb-5">
+            <div class="row mt-3">
+                <h1 style="font-family: fantasy"><b>Teams</b></h1>
+                <div class="row bar"></div>
+                <div class="card marg bg-dark col-md-3" style="width: 18rem;">
+                    <img src="https://www.formula1.com/content/fom-website/en/teams/Red-Bull-Racing/_jcr_content/logo.img.jpg/1610719164360.jpg" class="card-img-top mt-1" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-white">Red Bull</h5>
+                        <p class="card-text text-white"><b>Drivers:</b><br /> <i class="fa fa-arrow-right"></i>Max Verstappen <br /><i class="fa fa-arrow-right"></i>Sergio Pérez<br /><b>Team Chief:</b><br /><i class="fa fa-arrow-right"></i>Christian Horner</p>
+                        <a href="http://localhost:8418/Projeto/constructorsInfo.html?id=9" style="background-color:#9a0e0e"  class="btn text-white">Saber mais!</a>
+                    </div>
+                </div>
+                <div class="card marg bg-dark col-md-3" style="width: 18rem;">
+                    <img style="height: 147.38px; background-color: #9a0e0e" src="https://www.formula1.com/content/fom-website/en/teams/McLaren/_jcr_content/logo.img.jpg/1515152760829.jpg" class="card-img-top mt-1" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-white">McLaren</h5>
+                        <p class="card-text text-white"><b>Drivers:</b><br /> <i class="fa fa-arrow-right"></i>Daniel Ricciardo <br /><i class="fa fa-arrow-right"></i>Lando Norris<br /><b>Team Chief:</b><br /><i class="fa fa-arrow-right"></i>Andreas Seidl</p>
+                        <a href="http://localhost:8418/Projeto/constructorsInfo.html?id=1" style="background-color:#9a0e0e" class="btn text-white">Saber mais!</a>
+                    </div>
+                </div>
+                <div class="card marg bg-dark col-md-3" style="width: 18rem;">
+                    <img src="https://www.formula1.com/content/fom-website/en/teams/Mercedes/_jcr_content/logo.img.jpg/1582638425211.jpg" class="card-img-top mt-1" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-white">Mercedes</h5>
+                        <p class="card-text text-white"><b>Drivers:</b><br /> <i class="fa fa-arrow-right"></i>Lewis hamilton <br /><i class="fa fa-arrow-right">George Russell </i> <br /><b>Team Chief:</b><br /><i class="fa fa-arrow-right"></i>Toto Wolff</p>
+                        <a href="http://localhost:8418/Projeto/constructorsInfo.html?id=131" style="background-color:#9a0e0e" class="btn text-white">Saber mais!</a>
+                    </div>
+                </div>
+                <div class="card marg bg-dark col-md-3" style="width: 18rem;">
+                    <img style="height:147.38px" src="https://www.formula1.com/content/fom-website/en/teams/Ferrari/_jcr_content/logo.img.jpg/1521797474166.jpg" class="card-img-top mt-1" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-white">Ferrari</h5>
+                        <p class="card-text text-white"><b>Drivers:</b><br /> <i class="fa fa-arrow-right"></i>Charles Leclerc <br /><i class="fa fa-arrow-right"></i>Carlos Sainz<br /><b>Team Chief:</b><br /><i class="fa fa-arrow-right"></i>Mattia Binotto</p>
+                        <a href="http://localhost:8418/Projeto/constructorsInfo.html?id=6" style="background-color:#9a0e0e" class="btn text-white">Saber mais!</a>
+                    </div>
+                </div>
+                <div class="card marg bg-dark col-md-3" style="width: 18rem;">
+                    <img src="https://www.formula1.com/content/fom-website/en/teams/Alpine/_jcr_content/logo.img.jpg/1611246834255.jpg" class="card-img-top mt-1" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-white">Alpine</h5>
+                        <p class="card-text text-white"><b>Drivers:</b><br /> <i class="fa fa-arrow-right"></i>Fernando Alonso <br /><i class="fa fa-arrow-right"></i>Esteban Ocon<br /><b>Team Chief:</b><br /><i class="fa fa-arrow-right"></i>Davide Brivio</p>
+                        <a href="http://localhost:8418/Projeto/constructorsInfo.html?id=214" style="background-color:#9a0e0e" class="btn text-white">Saber mais!</a>
+                    </div>
+                </div>
+                <div class="card marg bg-dark col-md-3" style="width: 18rem;">
+                    <img src="https://www.formula1.com/content/fom-website/en/teams/AlphaTauri/_jcr_content/logo.img.jpg/1582650557134.jpg" style="background-color:#9a0e0e" class="card-img-top mt-1" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-white">AlphaTauri</h5>
+                        <p class="card-text text-white"><b>Drivers:</b><br /> <i class="fa fa-arrow-right"></i>Pierry Gasly <br /><i class="fa fa-arrow-right"></i>Yuki Tsunoda<br /><b>Team Chief:</b><br /><i class="fa fa-arrow-right"></i>Franz Tost</p>
+                        <a href="http://localhost:8418/Projeto/constructorsInfo.html?id=213" style="background-color:#9a0e0e" class="btn text-white">Saber mais!</a>
+                    </div>
+                </div>
+                <div class="card marg bg-dark col-md-3" style="width: 18rem;">
+                    <img src="https://www.formula1.com/content/fom-website/en/teams/Williams/_jcr_content/logo.img.jpg/1590743731407.jpg" style="background-color:#9a0e0e" class="card-img-top mt-1" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-white">Williams Racing</h5>
+                        <p class="card-text text-white"><b>Drivers:</b><br /> <i class="fa fa-arrow-right"></i>Nicholas Latifi <br /><i class="fa fa-arrow-right"></i>Alex Albon<br /><b>Team Chief:</b><br /><i class="fa fa-arrow-right"></i>Jost Capito</p>
+                        <a href="http://localhost:8418/Projeto/constructorsInfo.html?id=3" style="background-color:#9a0e0e" class="btn text-white">Saber mais!</a>
+                    </div>
+                </div>
+                <div class="card marg bg-dark col-md-3" style="width: 18rem;">
+                    <img src="https://www.formula1.com/content/fom-website/en/teams/Alfa-Romeo-Racing/_jcr_content/logo.img.jpg/1582650603836.jpg" class="card-img-top mt-1" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-white">Alfa Romeo</h5>
+                        <p class="card-text text-white"><b>Drivers:</b><br /> <i class="fa fa-arrow-right"></i>Valtteri Bottas<br /><i class="fa fa-arrow-right"></i>Guanyu Zhou<br /><b>Team Chief:</b><br /><i class="fa fa-arrow-right"></i>Frédéric Vasseur</p>
+                        <a href="http://localhost:8418/Projeto/constructorsInfo.html?id=51" style="background-color:#9a0e0e" class="btn text-white">Saber mais!</a>
+                    </div>
+                </div>
+                <div class="card marg bg-dark col-md-3" style="width: 18rem;">
+                    <img src="https://www.formula1.com/content/fom-website/en/teams/Haas-F1-Team/_jcr_content/logo.img.jpg/1615481143675.jpg" class="card-img-top mt-1" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-white">Haas</h5>
+                        <p class="card-text text-white"><b>Drivers:</b><br /> <i class="fa fa-arrow-right"></i>Mick Schumacher <br /><i class="fa fa-arrow-right"></i>Nikita Mazepin<br /><b>Team Chief:</b><br /><i class="fa fa-arrow-right"></i> Guenther Steiner</p>
+                        <a href="http://localhost:8418/Projeto/constructorsInfo.html?id=210" style="background-color:#9a0e0e" class="btn text-white">Saber mais!</a>
+                    </div>
+                </div>
+                <div class="card marg bg-dark col-md-3" style="width: 18rem;">
+                    <img src="https://www.formula1.com/content/fom-website/en/teams/Aston-Martin/_jcr_content/logo.img.png/1636626797971.png" class="card-img-top mt-1" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-white">Aston Martin</h5>
+                        <p class="card-text text-white"><b>Drivers:</b><br /> <i class="fa fa-arrow-right"></i>Sebastian Vettel  <br /><i class="fa fa-arrow-right"></i>Lance Stroll<br /><b>Team Chief:</b><br /><i class="fa fa-arrow-right"></i>Mike Krack</p>
+                        <a href="http://localhost:8418/Projeto/constructorsInfo.html?id=117" style="background-color:#9a0e0e" class="btn text-white">Saber mais!</a>
+                    </div>
+                </div>
+                <div class="card marg bg-dark col-md-3" style="width: 36rem;">
+                    <img style="height:147.38px;" src="https://www.fia.com/sites/default/files/page/top_image/07110801_052_5.jpg" class="card-img-top mt-1" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-white">FIA</h5>
+                        <p  class="card-text text-white"><b>Race Director :</b><br /> <i class="fa fa-arrow-right"></i>Michael Masi <br /><br /><b>Safety Car Driver:</b><br /><i class="fa fa-arrow-right"></i>Bernd Mayländer</p>
+                        <a href="https://www.fia.com/" style="background-color:#9a0e0e" class="btn text-white">Saber mais!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar fixed-bottom" style="background-color: black; height:50px;">
+            <div class="container small">
+                <div class="navbar-text" style="color: white;">&copy;  Intrrodução as tecnologias Web - 2021/22</div>
+                <div class="navbar-nav">
+                    <div class="nav-item text-end"><a href="https://www.instagram.com/f1/"><i style="color: #9a0e0e;" class="fa fa-instagram fa-2x mt-0"></i></a><a href="https://twitter.com/F1"><i style="color: #9a0e0e; padding:5px;" class="fa fa-twitter fa-2x"></i></a><a href="https://www.facebook.com/Formula1/"><i style="color: #9a0e0e;" class="fa fa-facebook fa-2x"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

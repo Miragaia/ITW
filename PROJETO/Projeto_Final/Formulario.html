@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Responsive Navbar | CodingNepal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../lib/font-awesome/dist/css/font-awesome.min.css">
+    <link rel="stylesheet" href="mycss.css" />
+    <title></title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg p-0 mb-0 bg-black text-white navbar navbar-default navbar-nav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Home.html">
+                <img src="F1_Formula_1.png" height="80px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"> <i style="color: red;" class="fa fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul style="text-align:center;" class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li><a href="Home.html" style="font-family: fantasy; text-decoration: none;">Home</a>
+                    <li><a href="drivers2.html" style="font-family: fantasy; text-decoration: none;">Drivers</a></li>
+                    <li><a href="News.html" style="font-family: fantasy; text-decoration: none;">News</a></li>
+                    <li><a href="LiveEvents.html" class="active" style="font-family: fantasy; text-decoration: none;">Events</a></li>
+                    <li><a href="circuits2.html" style="font-family: fantasy; text-decoration: none;">Circuits</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-family: fantasy;color:white;padding: 1px 13px;">
+                            Constructors
+                        </a>
+                        <ul class="dropdown-menu" style="background-color:black;" aria-labelledby="navbarDropdown">
+                            <li><a style="background-color: black; color: white; font-size: 15px; font-family: fantasy;" class="dropdown-item" href="Teams.html">Grand Prix 2022 Constructors</a></li>
+                            <li><a style="background-color: black; color: white; font-size: 15px; font-family: fantasy; text-decoration:none; " class="dropdown-item;" href="constructors.html">All Time Cosntructors</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="navbar fixed-bottom" style="background-color: black; height:50px;">
+        <div class="container small">
+            <div class="navbar-text" style="color: white;">&copy;  Intrrodução as tecnologias Web - 2021/22</div>
+            <div class="navbar-nav">
+                <div class="nav-item text-end"><a href="https://www.instagram.com/f1/"><i style="color: #9a0e0e;" class="fa fa-instagram fa-2x mt-0"></i></a><a href="https://twitter.com/F1"><i style="color: #9a0e0e; padding:5px;" class="fa fa-twitter fa-2x"></i></a><a href="https://www.facebook.com/Formula1/"><i style="color: #9a0e0e;" class="fa fa-facebook fa-2x"></i></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-3">
+        <h1 style='font-family: sans-serif'><b>Dados Pessoais</b></h1>
+        <div class="row bar"></div>
+        <form id="f1" name="dados">
+            <div class="row mb-1">
+                <label for="Nome" class="col-md-2 col-form-label"><b>Nome</b></label>
+                <div class="col-md-5"><input type="text" name="Nome" id="Nome" class="form-control" /></div>
+                <span id="e1" style="margin-left:230px; color: red;display:none"><i class="fa fa-exclamation-triangle"> O nome não tem o mínimo de três letras!</i></span>
+            </div>
+            <div class="row mb-1">
+                <label for="Telemovel" class="col-md-2 col-form-label"><b>Telemóvel</b></label>
+                <div class="col-md-5"><input type="text" name="telemovel" id="Telemovel" class="form-control" /></div>
+                <span id="e3" style="margin-left:230px; color: red;display:none;"><i class="fa fa-exclamation-triangle"> O número de telemóvel não tem o mínimo de 9 digitos!</i></span>
+            </div>
+            <div class="row mb-1">
+                <label for="Morada" class="col-md-2 col-form-label"><b>Morada</b></label>
+                <div class="col-md-5"><textarea name="Morada" id="Morada" class="form-control" rows="4"></textarea></div>
+                <span id="e2" style="margin-left: 230px; color: red; display: none"><i class="fa fa-exclamation-triangle"> A morada não tem o mínimo 3 palavras!</i></span>
+            </div>
+            <div class="col-md-2"><b>Método de Pagamento</b></div>
+            <div class="col-md-4 ">
+                <div id="check" class="form-check">
+                    <input type="radio" name="pagamento" class="form-check-input" value="MBWay" id="MBWay"><label class="form-check-label" for="MBWay">MBWay</label><br />
+                    <input type="radio" name="pagamento" class="form-check-input" value="PayPal" id="PayPal"><label class="form-check-label" for="PayPal">PayPal</label><br />
+                    <input type="radio" name="pagamento" class="form-check-input" value="Azul" id="Visa"><label class="form-check-label" for="Visa">Visa</label>
+                </div>
+            </div>
+            <div class="row mb-1">
+                <div class="col-md-10 offset-md-2 justify-content-center">
+                    <button type="Submit" name="submitBtn" value="Enviar" class="btn btn-danger" onclick="return validar()" title="Enviar pedido"><i class="fa fa-send"></i></button>
+                    <button type="reset" name="resetBtn" value="Limpar" class="btn btn-dark" onclick="limpar()" title="Limpar compra"><i class="fa fa-trash-o"></i></button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="../lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Formulario.js"></script>
+</body>
+</html>

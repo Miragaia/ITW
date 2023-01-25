@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ITW 2021/22</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="../lib/font-awesome/dist/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="mycss.css" />
+    <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg p-0 mb-0 bg-black text-white navbar navbar-default navbar-nav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Home.html">
+                <img src="F1_Formula_1.png" height="80px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"> <i style="color: red;" class="fa fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul style="text-align:center;" class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li><a href="Home.html" style="font-family: fantasy; text-decoration: none;">Home</a>
+                    <li><a href="Drivers2.html" style="font-family: fantasy; text-decoration: none;">Drivers</a></li>
+                    <li><a href="News.html" style="font-family: fantasy; text-decoration: none;">News</a></li>
+                    <li><a href="LiveEvents.html" style="font-family: fantasy; text-decoration: none;">Events</a></li>
+                    <li><a href="circuits2.html" style="font-family: fantasy; text-decoration: none;">Circuits</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-family: fantasy;color:#9a0e0e;padding: 1px 13px;">
+                            Constructors
+                        </a>
+                        <ul class="dropdown-menu" style="background-color:black;" aria-labelledby="navbarDropdown">
+                            <li><a style="background-color: black; color: white; font-size: 15px; font-family: fantasy;" class="dropdown-item" href="Teams.html">Grand Prix 2022 Constructors</a></li>
+                            <li><a style="background-color: black; color: white; font-size: 15px; font-family: fantasy; text-decoration:none; " class="dropdown-item;" href="constructors.html">All Time Cosntructors</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container c1">
+        <div class="py-2 mb-3">
+            <h2 style="font-family:fantasy;"><b data-bind="text:Name() +' ['+ConstructorId()+']'"></b></h2>
+        </div>
+        <table class="table table-sm small">
+            <tr class="row">
+                <th class="col-md-2">Constructor Id:</th>
+                <td class="col-md-10" data-bind="text: ConstructorId"></td>
+            </tr>
+            <tr class="row">
+                <th class="col-md-2">Nome:</th>
+                <td class="col-md-10" data-bind="text: Name"></td>
+            </tr>
+            <tr class="row" data-bind="visible: ImageUrl() != '' && ImageUrl() != null">
+                <th class="col-md-2">Imagem:</th>
+                <td class="col-md-10"><img class="img-thumbnail col-2" data-bind="attr:{src: ImageUrl}"><br />[<span data-bind="text: ImageUrl"></span>]</td>
+            </tr>
+            <tr class="row">
+                <th class="col-md-2">Nacionalidade:</th>
+                <td class="col-md-10" data-bind="text: Nationality"></td>
+            </tr>
+            <tr class="row">
+                <th class="col-md-2">Url:</th>
+                <td class="col-md-10"><a class="text-muted text-decoration-none" data-bind="attr: {href: Url, target:'blank'}"><i class="fa fa-external-link"></i> [<span class="" data-bind="text: Url"></span>]</a></td>
+            </tr>
+            <tr class="row">
+                <th class="2">Pilotos [<span data-bind="text: Drivers().length"></span>]:</th>
+            </tr>
+            <tr>
+                <td colspan="2" class="small" data-bind="foreach: Drivers">
+                    <div class="border rounded d-inline-block mr-2 mb-1 p-1">
+                        <i class=" fa fa-dot-circle-o"></i> <a class="text-muted text-decoration-none" data-bind="text: Name + ' ('+Nationality+')', attr: { href: './DriverDetails.html?id=' + DriverId }"></a> (<span data-bind="text: DriverId"></span>)
+                    </div>
+                </td>
+            </tr>
+            <tr class="row">
+                <th class="2">Corridas [<span data-bind="text: Races().length"></span>]:</th>
+            </tr>
+            <tr>
+                <td colspan="2" class="small" data-bind="foreach: Races">
+                    <div class="border rounded d-inline-block mr-2 mb-1 p-1">
+                        <i class=" fa fa-dot-circle-o"></i> <a class="text-muted text-decoration-none" data-bind="text: Name, attr: { href: './raceDetails.html?id=' + RaceId }"></a> (<span data-bind="text: RaceId"></span>)
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-light">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2418/2418779.png" height="30" /> Loading data...
+                    </h5>
+                </div>
+                <div class="modal-body text-center">
+                    <i class="fa fa-spin fa-3x fa-refresh"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar fixed-bottom" style="background-color: black; height:50px;">
+        <div class="container small">
+            <div class="navbar-text" style="color: white;">&copy;  Intrrodução as tecnologias Web - 2021/22</div>
+            <div class="navbar-nav">
+                <div class="nav-item text-end"><a href="https://www.instagram.com/f1/"><i style="color: #9a0e0e;" class="fa fa-instagram fa-2x mt-0"></i></a><a href="https://twitter.com/F1"><i style="color: #9a0e0e; padding:5px;" class="fa fa-twitter fa-2x"></i></a><a href="https://www.facebook.com/Formula1/"><i style="color: #9a0e0e;" class="fa fa-facebook fa-2x"></i></a></div>
+            </div>
+        </div>
+    </div>
+    <script src="../lib/jquery/dist/jquery.min.js"></script>
+    <script src="../lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/knockout/dist/knockout-latest.js"></script>
+    <script src="../lib/jqueryui/dist/jquery-ui.min.js"></script>
+    <script src="constructorsInfo.js"></script>
+    <script type="text/javascript">(function () { window['__CF$cv$params'] = { r: '6d53e6c14dcf03f6', m: 'tllvAeta8E1B0BWy9PI6DRvfoLwGL2HHnpWKxcnVZv4-1643474416-0-AaI1aGzs4zeKQH7HPiYv+o/MyFUzEWJc/kvJzbbA74TYi0FzyXlnlpBSEpbh3rpoQiTBY/iAA5/ZkOHdFENt20uEiuaxnB+EbtTLbD/Q9ySm0QAXmUnsX+0EV74bnZySdct8iTCxNvFjgpEKwoakKExo6sRTVt6piw/se8a4HOs4i5m2VujiytWNWRPiHPA+M/n1gim2ztG9xrZVplcIHoY=', s: [0xf4eb34a970, 0xb84617eb24], } })();</script>
+</body>
+</html>
