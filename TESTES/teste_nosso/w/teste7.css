@@ -1,0 +1,19 @@
+﻿/**** TODO ****/
+.banner {
+    height: 360px;
+    margin: auto;
+    margin-bottom: 1em;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://lh3.googleusercontent.com/QdIuNCstP2n5EL6YwpDLdP_MZnxXnLqkxLs0u7oWewAU7FJ_ib2XizdHrOi3DQadOOQV1w=s170");
+}
+
+body {
+    margin-top: 0em;
+    margin-bottom: 1em;
+}
+
+.hide {
+    display: none;
+}

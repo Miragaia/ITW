@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>o meu primeiro teste knockout</title>
+    <meta charset ="utf-8" />
+</head>
+<body>
+    O meu nome é <span data-bind="text:personName"></span>
+    <script src="../Scripts/knockout-3.4.0.js"></script>
+    <script>
+        var myViewModel = {
+            personName: 'Zé Maria',
+            personAge: 45
+        };
+        ko.applyBindings(myViewModel);
+    </script>
+    <script src="../lib/knockout/dist/knockout-latest.js"></script>
+    <script>
+        var myViewModel = {
+            personName: (ko.observable('Miguel'),
+            personAge: ko.observable(18)
+        };
+        ko.applyBindings(myViewModel);
+    </script>
+</body>
+</html>
+

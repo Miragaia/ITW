@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="Author"content="Joaquim Sousa Pinto">
+    <meta name="Keywords"content="formulário;fonteexterna;CSS">
+    <meta name="Description"content="Formulário com utilização de fonte externa e estilos CSS">
+    <title>Formulário</title>
+    <link rel="preconnect"href="https://fonts.googleapis.com">
+    <link rel="preconnect"href="https://fonts.gstatic.com"crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"rel="stylesheet">
+    <style>
+    body, input, select, textarea{ font-family: 'Open Sans', Tahoma, Geneva, Verdana, sans-serif; }
+    input[type=submit], input[type=reset]{ padding: 0.375rem 0.75rem; font-size: 1rem; }
+    select, input[type=text], input[type=password]{ font-size: 1rem; border: 1px solid#ced4da; border-radius: 0.25rem; width: 100%; }
+    fieldset{ border: 1px solid#ced4da; border-radius: 0.25rem; }
+    textarea{ width: 100%; font-size: 1rem; border: 1px solid#ced4da; border-radius: 0.25rem; }
+    .left{float:left; clear: left; width: 120px}
+    .right{margin: 0 0 0 130px; padding: 0 0 0 0.25em 0;}
+    </style>
+    <title></title>
+</head>
+<body>
+    <form name ="PersonData" action="http://192.168.160.36/FormEcho.aspx" method="post">
+        <input type ="hidden" name="FormName" value="UserForm" />
+        <h1>Informação Pessoal</h1>
+            <fieldset>
+                <legend>Informação Pessoal</legend>
+                <div class="left"><label for="curso">Curso:  </label></div>
+                <div class="right">
+                    <select name="curso">
+                        <option value="1" selected="selected">Licensiatura em Engenharia Informática</option>
+                        <option value="2"> Mestrado em Engenharia Informática</option>
+                        <option value="3">Licensiatura em Enfermagem</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="name">Nome:    </label>
+                    <input type="text" id="name" name="FirstName" />
+                </div>
+                <div>
+                    <label for="secondname">Sobrenome:    </label>
+                    <input type="text" id="secondname" name="SecondName" />
+                </div>
+                <div>
+                    <label for="password">Password:    </label>
+                    <input type="password" id="password" name="Password" />
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Comentários</legend>
+                <dt></dt>
+                <dd>
+                    <textarea name="Comments" rows="4" cols="80" placeholder="Insira os seus comentários"></textarea>
+                </dd>
+            </fieldset>
+            <hr />
+            <dd>
+                <input name="Button" type="Submit" /><input type="reset" name="resetBtn" value="Reset" />
+            </dd>
+        </dl>
+        </form>
+</body>
+</html>
